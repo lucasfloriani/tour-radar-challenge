@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countdown component should render correctly with default config 1`] = `
+.c1 {
+  color: #000000;
+  font-family: Helvetica,Arial,FreeSans,sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+}
+
+.c5 {
+  color: #000000;
+  font-family: Helvetica,Arial,FreeSans,sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.c6 {
+  color: #000000;
+  font-family: Helvetica,Arial,FreeSans,sans-serif;
+  font-size: .6em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 60px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-bottom: 2px;
+  width: 60px;
+}
+
+.c7 {
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: grid;
+  gap: 3px;
+}
+
+.c3 {
+  display: inline-grid;
+  gap: 8px;
+  grid-template-columns: repeat(4,auto);
+}
+
+.c2 {
+  -webkit-letter-spacing: 3px;
+  -moz-letter-spacing: 3px;
+  -ms-letter-spacing: 3px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <h4
+      class="c1 c2"
+      color="grayscale.100"
+    >
+      Starts in
+    </h4>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        <p
+          class="c5"
+          color="grayscale.100"
+        >
+          0
+        </p>
+        <p
+          class="c6 c7"
+          color="grayscale.100"
+        >
+          days
+        </p>
+      </div>
+      <div
+        class="c4"
+      >
+        <p
+          class="c5"
+          color="grayscale.100"
+        >
+          0
+        </p>
+        <p
+          class="c6 c7"
+          color="grayscale.100"
+        >
+          hours
+        </p>
+      </div>
+      <div
+        class="c4"
+      >
+        <p
+          class="c5"
+          color="grayscale.100"
+        >
+          0
+        </p>
+        <p
+          class="c6 c7"
+          color="grayscale.100"
+        >
+          minutes
+        </p>
+      </div>
+      <div
+        class="c4"
+      >
+        <p
+          class="c5"
+          color="grayscale.100"
+        >
+          10
+        </p>
+        <p
+          class="c6 c7"
+          color="grayscale.100"
+        >
+          seconds
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;

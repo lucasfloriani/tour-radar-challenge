@@ -1,0 +1,25 @@
+{
+  "name": "@tour-radar/design-system",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
+    "@types/react-lazy-load-image-component": "^1.5.2",
+    "@types/styled-components": "^5.1.15",
+    "babel-loader": "8.1.0"
+  },
+  "dependencies": {
+    "@tour-radar/design-system": "1.0.0",
+    "react-lazy-load-image-component": "^1.5.1",
+    "styled-components": "^5.3.3",
+    "styled-media-query": "^2.1.2"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}

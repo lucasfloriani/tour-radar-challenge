@@ -1,0 +1,30 @@
+{
+  "name": "tour-radar-test",
+  "version": "1.0.0",
+  "description": "Repo with the tour radar test made by Lucas Floriani",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start:challenge-1": "yarn challenge-1 dev",
+    "start:challenge-2": "yarn challenge-2 dev",
+    "start:design-system": "yarn design-system storybook",
+    "test:challenge-1": "yarn challenge-1 test",
+    "test:challenge-2": "yarn challenge-2 test",
+    "test:design-system": "yarn design-system test",
+    "challenge-1": "yarn workspace @tour-radar/challenge-1",
+    "challenge-2": "yarn workspace @tour-radar/challenge-2",
+    "design-system": "yarn workspace @tour-radar/design-system"
+  },
+  "keywords": [
+    "react",
+    "monorepo",
+    "styled-components",
+    "storybook"
+  ],
+  "author": "Lucas Floriani <lucas.floriane@gmail.com>",
+  "license": "MIT"
+}
