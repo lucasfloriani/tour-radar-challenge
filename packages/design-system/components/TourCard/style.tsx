@@ -11,6 +11,7 @@ export const Card = styled.article`
   grid-template-areas: "visual header info" "visual content info";
   grid-template-columns: 230px 1fr 200px;
   grid-template-rows: auto 1fr;
+  background-color: ${({ theme }) => theme.palette["grayscale.500"]};
 `;
 
 export const VisualSidebar = styled.aside`

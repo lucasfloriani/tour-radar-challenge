@@ -8,7 +8,11 @@ import ListTours from "components/ListTours";
 import Container from "components/Container";
 
 const LoaderContainer = styled.div`
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 22px;
   display: grid;
+  height: calc(100vh - 96px);
   place-content: center;
   width: 100%;
 `;
