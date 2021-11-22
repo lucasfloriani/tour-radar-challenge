@@ -44,7 +44,14 @@ const useTours = ({ filter = "lowest" }: UseTourProps) => {
         setIsLoading(true);
         const response = await fetch(process.env.NEXT_PUBLIC_TOUR_API!);
         const data = await response.json();
-        setAllTours(data);
+        // * Map used only to fix the placeholder images without HTTPS
+        setAllTours(
+          data.map((tour: Tour) => ({
+            ...tour,
+            map_url: "https://via.placeholder.com/232x112",
+            img_url: "https://via.placeholder.com/232x112",
+          }))
+        );
       } catch (e) {
         console.error(e);
       } finally {
