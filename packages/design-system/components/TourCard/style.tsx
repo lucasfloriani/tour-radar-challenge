@@ -12,6 +12,13 @@ export const Card = styled.article`
   grid-template-columns: 230px 1fr 200px;
   grid-template-rows: auto 1fr;
   background-color: ${({ theme }) => theme.palette["grayscale.500"]};
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    grid-template-areas: "visual" "header" "content" "info";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  `}
 `;
 
 export const VisualSidebar = styled.aside`
@@ -21,9 +28,22 @@ export const VisualSidebar = styled.aside`
 `;
 
 export const ImageFit = styled(Image)`
+  object-fit: cover;
+  width: 100%;
+
+  ${({ theme }) => theme.medias.greaterThan("small")`
+    max-height: 170px;
+  `}
+`;
+
+export const MapFit = styled(Image)`
   max-height: 170px;
   object-fit: cover;
   width: 100%;
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    display: none;
+  `}
 `;
 
 export const CardHeader = styled.header`
@@ -32,6 +52,10 @@ export const CardHeader = styled.header`
   margin-bottom: 16px;
   padding-bottom: 16px;
   padding-top: 16px;
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    padding: 16px 12px;
+  `}
 `;
 
 export const RatingWrapper = styled.div`
@@ -51,6 +75,10 @@ export const DescriptionText = styled(Typography).attrs({
 export const CardContent = styled.div`
   grid-area: content;
   padding-bottom: 12px;
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    padding: 0 12px 12px;
+  `}
 `;
 
 export const ListContent = styled(TextWithMoreItems).attrs({
@@ -67,12 +95,20 @@ export const CardInfo = styled.div`
   grid-area: info;
   padding-right: 12px;
   padding-top: 24px;
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    padding: 16px 12px 0;
+  `}
 `;
 
 export const PriceInfo = styled.div`
   display: grid;
   gap: 12px;
   grid-template-columns: 1fr 1fr;
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    grid-template-columns: minmax(120px, 200px) minmax(120px, 200px);
+  `}
 `;
 
 export const FlexTour = styled.div`
@@ -80,6 +116,10 @@ export const FlexTour = styled.div`
   display: flex;
   gap: 8px;
   margin-top: 12px;
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    margin: 20px 0;
+  `}
 `;
 
 export const CheckIcon = () => (
@@ -92,8 +132,13 @@ export const CheckIcon = () => (
 );
 
 export const CardActions = styled.div`
+  box-sizing: border-box;
   margin-top: 12px;
   width: 100%;
+
+  ${({ theme }) => theme.medias.lessThan("small")`
+    padding-bottom: 12px;
+  `}
 `;
 
 export const ActionButton = styled(Button).attrs({ fontSize: "normal" })`

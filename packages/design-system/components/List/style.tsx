@@ -7,5 +7,5 @@ export const ListWrapper = styled.section`
 
 export const ListItemWrapper = styled.div`
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 120px 1fr;
 `;

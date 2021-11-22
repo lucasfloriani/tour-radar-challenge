@@ -7,6 +7,7 @@ import {
   ListText,
   CardInfo,
   ImageFit,
+  MapFit,
   RatingWrapper,
   DescriptionText,
   PriceInfo,
@@ -60,7 +61,7 @@ const TourCard = ({
     <Card>
       <VisualSidebar>
         <ImageFit src={image} alt="Tour Image" />
-        <ImageFit src={mapImg} alt="Map Image" />
+        <MapFit src={mapImg} alt="Map Image" />
       </VisualSidebar>
       <CardHeader>
         <Typography color="grayscale.200" weight="700" size="medium">
