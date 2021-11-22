@@ -33,7 +33,8 @@ type LoaderProps = {
   size?: keyof ThemeValues["sizes"];
 };
 
-// TODO: Add information about why the loader was created like that (Bundle size and project simplicity)
+// * The Loader was created with styled components so we don't need a extra library for that.
+// * If the project is big, we can use a library for this.
 const Loader = styled.div.attrs((props: LoaderProps) => ({
   animationTime: props?.animationTime ?? "1.5s",
   bgColor: props?.bgColor ?? "grayscale.300",

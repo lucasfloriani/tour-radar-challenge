@@ -34,6 +34,7 @@ const sortFilters = {
   longest: (a: Tour, b: Tour) => b.length - a.length,
 };
 
+// * Custom hook created so in the future we can extend it to include more filters like pagination
 const useTours = ({ filter = "lowest" }: UseTourProps) => {
   const [allTours, setAllTours] = useState<Tour[]>([]);
   const [isLoading, setIsLoading] = useState(true);
