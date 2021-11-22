@@ -3,6 +3,7 @@ export const MINUTE = SECOND * 60;
 export const HOUR = MINUTE * 60;
 export const DAY = HOUR * 24;
 
+// TODO: Add info why this was created like that (Bundle size)
 export const getDays = (time: number) => Math.floor(time / DAY);
 export const getHours = (time: number) => Math.floor((time % DAY) / HOUR);
 export const getMinutes = (time: number) => Math.floor((time % HOUR) / MINUTE);

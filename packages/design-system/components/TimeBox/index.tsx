@@ -6,7 +6,6 @@ type TimeBoxProps = {
 };
 
 const TimeBox = ({ time, label }: TimeBoxProps) => {
-  // TODO: Add i11y for date
   return (
     <Wrapper>
       <TimeText>{time}</TimeText>

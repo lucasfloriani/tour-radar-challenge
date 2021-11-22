@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { ThemeValues } from "./themes/type";
 
 interface ThemeProps {
-  theme?: "default"; // TODO: Add more options of themes in the future
+  theme?: "default";
 }
 
 const Theme: React.FC<ThemeProps> = ({ theme = "default", children }) => {

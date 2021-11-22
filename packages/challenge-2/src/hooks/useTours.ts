@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export interface Tour {
   id: number;
@@ -39,7 +39,6 @@ const useTours = ({ filter = "lowest" }: UseTourProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    console.log("process.env.NEXT_PUBLIC_TOUR_API:", process.env.NEXT_PUBLIC_TOUR_API);
     const getAllTours = async () => {
       try {
         setIsLoading(true);

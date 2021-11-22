@@ -9,7 +9,7 @@ export default {
 
 export const Default = () => <Loader />;
 
-const AnimationWrapper = ({ children }) => (
+const AnimationWrapper: React.FC = ({ children }) => (
   <div
     style={{
       display: "grid",

@@ -4,17 +4,17 @@ import styled from "styled-components";
 export type TypographyProps = {
   align?: "left" | "center" | "right";
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
-  size?: keyof ThemeValues["sizes"];
-  color?: keyof ThemeValues["palette"];
-  weight?: "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900" | "light" | "normal" | "bold";
   children: React.ReactNode;
+  color?: keyof ThemeValues["palette"];
+  size?: keyof ThemeValues["sizes"];
+  weight?: "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900" | "light" | "normal" | "bold";
 };
 
 const Typography = styled.p.attrs((props: TypographyProps) => ({
   align: props?.align ?? "left",
   as: props?.as ?? "p",
-  size: props?.size ?? "small",
   color: props?.color ?? "grayscale.100",
+  size: props?.size ?? "small",
   weight: props?.weight ?? "normal",
 }))`
   color: ${({ theme, color }) => theme.palette[color]};

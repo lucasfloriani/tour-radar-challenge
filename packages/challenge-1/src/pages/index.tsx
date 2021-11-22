@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
 import SwitchLanguage from "components/SwitchLanguage";
 import Countdown from "components/Countdown";
+import { MINUTE, DAY } from "../helpers/time";
 
 const timeNow = new Date();
-const longEndTime = new Date(timeNow.getTime() + 1000 * 60 * 60 * 24 * 3 + 1000 * 60 * 30);
+const longEndTime = new Date(timeNow.getTime() + DAY * 3 + MINUTE * 30);
 
 const Home: NextPage = () => {
   return (

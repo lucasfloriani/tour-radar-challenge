@@ -36,17 +36,17 @@ type LoaderProps = {
 // TODO: Add information about why the loader was created like that (Bundle size and project simplicity)
 const Loader = styled.div.attrs((props: LoaderProps) => ({
   animationTime: props?.animationTime ?? "1.5s",
-  color: props?.color ?? "primary.200",
   bgColor: props?.bgColor ?? "grayscale.300",
+  color: props?.color ?? "primary.200",
   size: props?.size ?? "medium",
 }))`
+  animation: ${spin} ${({ animationTime }) => animationTime} linear infinite;
+  border-radius: 50%;
   border: ${({ size }) => borderSizes[size]} solid ${({ theme, bgColor }) => theme.palette[bgColor]};
   border-top: ${({ size }) => borderSizes[size]} solid ${({ theme, color }) => theme.palette[color]};
-  border-radius: 50%;
   display: inline-flex;
-  width: ${({ size }) => widthAndHeightSizes[size]};
   height: ${({ size }) => widthAndHeightSizes[size]};
-  animation: ${spin} ${({ animationTime }) => animationTime} linear infinite;
+  width: ${({ size }) => widthAndHeightSizes[size]};
 `;
 
 export default Loader;

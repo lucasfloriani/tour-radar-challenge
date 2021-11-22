@@ -10,7 +10,6 @@ type ButtonProps = {
   weight?: "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900" | "light" | "normal" | "bold";
 };
 
-// TODO: Check if passing other props like onClick will result in a type problem
 const Button = styled.button.attrs((props: ButtonProps) => ({
   bgColor: props?.bgColor ?? "primary.400",
   fontSize: props?.fontSize ?? "small",

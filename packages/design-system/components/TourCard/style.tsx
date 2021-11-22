@@ -5,11 +5,11 @@ import Typography from "../Typography";
 import TextWithMoreItems from "../TextWithMoreItems";
 
 export const Card = styled.article`
-  display: grid;
-  grid-template-columns: 230px 1fr 200px;
-  column-gap: 16px;
-  grid-template-areas: "visual header info" "visual content info" "visual content info";
   box-shadow: ${({ theme }) => theme.shadows.extraSmall};
+  column-gap: 16px;
+  display: grid;
+  grid-template-areas: "visual header info" "visual content info" "visual content info";
+  grid-template-columns: 230px 1fr 200px;
 `;
 
 export const VisualSidebar = styled.aside`
@@ -19,9 +19,9 @@ export const VisualSidebar = styled.aside`
 `;
 
 export const ImageFit = styled(Image)`
+  max-height: 170px;
   object-fit: cover;
   width: 100%;
-  max-height: 170px;
 `;
 
 export const CardHeader = styled.header`
@@ -63,8 +63,8 @@ export const ListText = styled(Typography).attrs({
 
 export const CardInfo = styled.div`
   grid-area: info;
-  padding-top: 24px;
   padding-right: 12px;
+  padding-top: 24px;
 `;
 
 export const PriceInfo = styled.div`
@@ -95,6 +95,6 @@ export const CardActions = styled.div`
 `;
 
 export const ActionButton = styled(Button).attrs({ fontSize: "normal" })`
-  width: 100%;
   font-weight: 700;
+  width: 100%;
 `;

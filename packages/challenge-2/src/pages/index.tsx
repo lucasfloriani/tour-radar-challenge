@@ -9,8 +9,8 @@ import Container from "components/Container";
 
 const LoaderContainer = styled.div`
   display: grid;
-  width: 100%;
   place-content: center;
+  width: 100%;
 `;
 
 const Home: NextPage = () => {
