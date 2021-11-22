@@ -15,6 +15,9 @@
     "test:challenge-1": "yarn challenge-1 test",
     "test:challenge-2": "yarn challenge-2 test",
     "test:design-system": "yarn design-system test",
+    "build:challenge-1": "yarn challenge-1 build",
+    "build:challenge-2": "yarn challenge-2 build",
+    "build:design-system": "yarn design-system build-storybook",
     "challenge-1": "yarn workspace @tour-radar/challenge-1",
     "challenge-2": "yarn workspace @tour-radar/challenge-2",
     "design-system": "yarn workspace @tour-radar/design-system"
