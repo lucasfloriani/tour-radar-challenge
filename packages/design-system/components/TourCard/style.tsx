@@ -8,8 +8,9 @@ export const Card = styled.article`
   box-shadow: ${({ theme }) => theme.shadows.extraSmall};
   column-gap: 16px;
   display: grid;
-  grid-template-areas: "visual header info" "visual content info" "visual content info";
+  grid-template-areas: "visual header info" "visual content info";
   grid-template-columns: 230px 1fr 200px;
+  grid-template-rows: auto 1fr;
 `;
 
 export const VisualSidebar = styled.aside`
@@ -27,8 +28,8 @@ export const ImageFit = styled(Image)`
 export const CardHeader = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.palette["grayscale.400"]};
   grid-area: header;
-  margin-bottom: 12px;
-  padding-bottom: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
   padding-top: 16px;
 `;
 
