@@ -13,6 +13,7 @@ const widthAndHeightSizes = {
   normal: "4em",
   large: "5em",
   extraLarge: "6em",
+  huge: "7em",
 };
 
 const borderSizes = {
@@ -22,6 +23,7 @@ const borderSizes = {
   normal: "12px",
   large: "14px",
   extraLarge: "16px",
+  huge: "18px",
 };
 
 type LoaderProps = {
